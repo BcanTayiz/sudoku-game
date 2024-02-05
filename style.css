@@ -1,0 +1,64 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+#sudoku-map {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 40px); /* Adjust the size as needed */
+  gap: 2px; /* Adjust the gap between cells */
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.cell,.cell-null{
+  width: 40px; /* Adjust the size as needed */
+  height: 40px; /* Adjust the size as needed */
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.cell-null{
+  background-color: blueviolet;
+  border: 20px;
+}
+
+.cell-selected{
+  background-color: rgb(53, 229, 100);
+  border: 20px;
+}
+
+.choices{
+  width: 30%;
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #b5b5b5;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+header{
+  text-align: center;
+}
+
+.complete-round{
+  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
